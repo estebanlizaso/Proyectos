@@ -34,7 +34,13 @@ nav{display: flex;justify-content:space-around;}
 
 footer{grid-column: span 12;}
 
+.redes a{padding: 2%;text-decoration: none;}
+
 footer a{color: white;}
+
+footer p{margin: 0;text-align: center;}
+
+footer div{padding: 1%;}
 
 .contenedor{margin: 1%;padding: 1%;background-color: white;min-height: 92%;}
 
