@@ -8,23 +8,25 @@ header, footer, nav{padding: 1%;/*border-radius: 2rem;*/font-size: 1rem;backgrou
 
 header{position: sticky;grid-column: span 12;top: 0;/*right: 0;*/}
 
-#presentacion{grid-column: span 6;}
+#presentacion{grid-column: 2/7;}
 
-#la_taberna{grid-column: span 6;}
+#la_taberna{grid-column: 7/12;}
 
-#nuestros_juegos{grid-column: span 12;}
+#nuestros_juegos{grid-column: 2/12;}
 
-#ludoteca{grid-column: span 12;}
+#ludoteca{grid-column: 2/12;}
 
-#horarios{grid-column: span 6;}
+#horarios{grid-column: 2/7;}
 
-#ubicacion{grid-column: span 6;}
+#ubicacion{grid-column: 7/12;}
 
 p{text-align: justify;margin: 2%;}
 
 iframe{width: 100%;}
 
 h1{font-size: 4rem;}
+
+.links{text-decoration: none;color: black;}
 
 nav{display: flex;justify-content:space-around;}
 
@@ -34,7 +36,11 @@ footer{grid-column: span 12;}
 
 footer a{color: white;}
 
+<<<<<<< HEAD
 .contenedor{margin: 1%;padding: 1%;background-color: white;}
+=======
+.contenedor{margin: 1%;padding: 1%;background-color: white;min-height: 92%;}
+>>>>>>> a3d37828fa9480fc571c9e59928b3b597a5831c5
 
 #img_taberna{padding: 2%;width: 96%;}
 
@@ -52,9 +58,13 @@ tbody tr:nth-child(odd) {background-color: #e6e6e6;}
   
 tbody tr:nth-child(even) {background-color: #bdbdbd;}
 
-.evento{margin: 1%;grid-column: span 8;}
+.evento:nth-child(even){margin: 1%;grid-column: 2/8;}
 
-.img_evento{grid-column: span 4;}
+.img_evento:nth-child(odd){grid-column: 8/12;}
+
+.evento:nth-child(odd){margin: 1%;grid-column: 6/12;}
+
+.img_evento:nth-child(even){grid-column: 2/6;}
 
 #img_carcassonne{margin: 2%;width: 96%;}
 
