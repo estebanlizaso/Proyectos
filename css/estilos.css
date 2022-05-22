@@ -4,7 +4,7 @@
 
 body{background-image: url(../img/taberna.jpg);min-height: 100vh;display: grid;grid-template-columns: repeat(12,1fr);}
 
-header, footer, nav{padding: 1%;/*border-radius: 2rem;*/font-size: 1rem;background-color: darkblue;color: white;text-align: center;font-family: 'Macondo', cursive;}
+header, footer, nav{padding: 0%;/*border-radius: 2rem;*/font-size: 1rem;background-color: darkblue;color: white;text-align: center;font-family: 'Macondo', cursive;}
 
 header{position: sticky;grid-column: span 12;top: 0;/*right: 0;*/}
 
@@ -28,9 +28,11 @@ h1{font-size: 4rem;}
 
 .links{text-decoration: none;color: black;}
 
-nav{display: flex;justify-content:space-around;}
+nav{display: flex;justify-content:space-between; align-items: stretch;}
 
-.boton_nav{text-decoration: none;color:white;}
+.boton_nav{text-decoration: none;color:white;width: 100%; padding:1%;font-size: 1rem;display: flex;justify-content: center; align-items: center;}
+
+.boton_nav:hover{background-color: rgb(0, 0, 233);}
 
 footer{grid-column: span 12;}
 
