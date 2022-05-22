@@ -3,16 +3,18 @@
 }
 
 *{
-    margin: 1%;
-    padding: 1%;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     background-image: url(../img/taberna.jpg);
+    margin: 2%;
 }
 
-header, footer{
-    border-radius: 2rem;
+header, footer, nav{
+    padding: 1%;
+    /*border-radius: 2rem;*/
     font-size: 1.5rem;
     background-color: darkblue;
     color: white;
@@ -20,3 +22,96 @@ header, footer{
     font-family: 'Macondo', cursive;
     overflow: auto;
 }
+
+nav{
+    position: sticky;
+    top: 0;
+    /*right: 0;*/
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a{
+    color:white;
+}
+
+footer a{
+    color: white;
+}
+
+div{
+    padding: 1%;
+    background-color: white;
+    
+}
+
+
+
+/*#ludoteca{
+    border: 4px coral solid;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(20,200px);
+    gap: 5px 5px;
+}*/
+
+img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+table{
+    margin: 0%;
+    padding: 1%;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td{
+    padding: 1%;
+    border: 1px black solid;
+}
+
+th{
+    padding: 1%;
+    border: 1px black solid;
+}
+
+/*.encabezado{
+    grid-column: span 12;
+}*/
+
+/*.juego{
+    border: 4px blue solid;
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(20,200px);
+    gap: 5px 5px;
+}*/
+
+/*.img_juego{
+    border: 2px red solid;
+    background-color: coral;
+    grid-column: span 4;
+}
+
+.idioma_juego{
+    border: 2px red solid;
+    grid-column: span 1;
+}
+
+.manual_juego{
+    border: 2px red solid;
+    grid-column: span 4;
+}
+
+.tutorial{
+    border: 2px red solid;
+    grid-column: span 3;
+}*/
+
+

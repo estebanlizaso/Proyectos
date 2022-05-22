@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,33 +16,327 @@
         </h1>
     </header>
     
-    <nav>
-        <a href="index.html"></a>
-        <a href="horarios-y-ubicación.html">Horarios y Ubicación</a>
-        <a href="ludoteca.html">Ludoteca</a>
-        <a href="reglas.html">¿Cómo jugar?</a>
-        <a href="reservas.html">Reservas</a>
-        <a href="eventos.html">Eventos</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="contacto.html">Contacto</a>
+    <nav class="navegador">
+        <a class="boton_nav" href="index.html">Inicio</a>
+        <a class="boton_nav" href="horarios-y-ubicación.html">Horarios y Ubicación</a>
+        <a class="boton_nav" href="ludoteca.html">Nuestra Ludoteca</a>
+        <a class="boton_nav" href="reservas.html">Reservas</a>
+        <a class="boton_nav" href="eventos.html">Eventos</a>
+        <a class="boton_nav" href="tienda.html">Tienda</a>
+        <a class="boton_nav" href="contacto.html">Contacto</a>
     </nav>
 
 
     <section>
-        <p>
-            A continuación encontrarás una lista de todos nuestros juegos.
-        </p>
+        <div>
+            <p>
+                A continuación encontrarás una lista de todos nuestros juegos.
+            </p>
+        </div>
         
-        <p>
-            También podrás descargar sus libros de reglas, e incluso ver tutoriales de cómo jugar.
-            No olvides que igualmente podés preguntarle a nuestro Staff cómo jugar.
-            Estamos para ayudarte en lo que necesites.
-        </p>
+        <div>
+            <p>
+                También podrás descargar sus libros de reglas, e incluso ver tutoriales de cómo jugar.
+                No olvides que igualmente podés preguntarle a nuestro Staff cómo jugar.
+                Estamos para ayudarte en lo que necesites.
+            </p>
+        </div>
     </section>
 
     <section>
-        
-        <div>
+        <!--
+        <div id="ludoteca">
+            <div class="encabezado">
+                <span>
+                    Juegos
+                </span>
+
+                <span>
+                    Idioma
+                </span>
+
+                <span>
+                    Manuales y reglas
+                </span>
+
+                <span>
+                    Tutoriales
+                </span>
+            </div>
+
+            <div class="juego">
+                <span class="img_juego">
+                    <p>7 Wonders + Expansiones (Armada y Lideres)</p>
+                    <p><img src="img/juegos/7-wonders+expansiones.jpeg" alt=""></p>
+                </span>
+                                                
+                <span class="idioma_juego">
+                    <p>Español</p>
+                </span>
+
+                <span class="manual_juego">
+                    <p><a href="manuales/7-wonders.pdf">7 Wonders</a></p>
+                    <p><a href="manuales/7-wonders-Armada.pdf">7 Wonders: Armada</a></p>
+                    <p><a href="manuales/7-wonders-Leaders.pdf">7 Wonders: Líderes</a></p>
+                </span>
+
+                <span class="tutorial">
+                    <p>Lorem</p>
+                </span>
+            </div>
+
+            <div class="juego">
+                <span class="img_juego">
+                    <p>Arkham Horror</p>
+                    <p><img src="img/juegos/arkham-horror.jpeg" alt=""></p>
+                </span>
+                
+                <span class="idioma_juego">
+                    <p>Español</p>
+                </span>
+
+                <span class="manual_juego">
+                    <p>Lorem<a href=""></a></p>
+                </span>
+
+                <span class="tutorial">
+                    <p>Lorem</p>
+                </span>
+            </div>
+
+            <div class="juego">
+                <span class="img_juego">
+                    <p>Captain S.O.N.A.R.</p>
+                    <p><img src="img/juegos/captain-sonar.jpeg" alt=""></p>
+                </span>
+                
+                <span class="idioma_juego">
+                    <p>Español</p>
+                </span>
+
+                <span class="manual_juego">
+                    <p><a href="manuales/Captain-SONAR.pdf"></a></p>
+                </span>
+
+                <span class="tutorial">
+                    <p>Lorem</p>
+                </span>
+            </div>
+
+            <div class="juego">
+                <span class="img_juego">
+                    <p>Carcassonne Plus</p>
+                    <p><img src="img/juegos/carcassonne-plus.jpeg" alt=""></p>
+                </span>
+                
+                <span class="idioma_juego">
+                    <p>Español</p>
+                </span>
+
+                <span class="manual_juego">
+                    <p>Lorem<a href=""></a></p>
+                </span>
+
+                <span class="tutorial">
+                    <p>Lorem</p>
+                </span>
+            </div>
+
+            <div class="juego">
+                <span class="img_juego">
+                    <p>Catan</p>
+                    <p><img src="img/juegos/catan.jpeg" alt=""></p>
+                </span>
+                
+                <span class="idioma_juego">
+                    <p>Español</p>
+                </span>
+
+                <span class="manual_juego">
+                    <p><a href="manuales/Catan-resumen.pdf">Catan: Resumen</a></p>
+                    <p><a href="manuales/Catan-resumen.pdf">Catan: Reglas</a></p>
+                </span>
+
+                <span class="tutorial">
+                    <p>Lorem</p>
+                </span>
+            </div>
+
+            <div class="juego">
+                <span class="img_juego">
+                    <p>Catan:Mercaderes y Bárbaros <br> Catan: Piratas y exploradores</p>
+                    <p><img src="img/juegos/catan-expansiones.jpeg" alt=""></p>
+                </span>
+                
+                <span class="idioma_juego">
+                    <p>Español</p>
+                </span>
+
+                <span class="manual_juego">
+                    <p>Lorem</p>
+                </span>
+
+                <span class="tutorial">
+                    <p>Lorem</p>
+                </span>
+            </div>
+
+            <div class="juego">
+                <span class="img_juego">
+                    <p>Cosmic Encounter</p>
+                    <p><img src="img/juegos/cosmic-encounter.jpeg" alt=""></p>
+                </span>
+                
+                <span class="idioma_juego">
+                    <p>Ingles</p>
+                </span>
+
+                <span class="manual_juego">
+                    <p><a href="manuales/Cosmic-Encounter.pdf"></a></p>
+                </span>
+
+                <span class="tutorial">
+                    <p>Lorem</p>
+                </span>
+            </div>
+
+            <div class="juego">
+                <span class="img_juego">
+                    <p>Cyclades</p>
+                    <p><img src="img/juegos/cyclades.jpeg" alt=""></p>
+                </span>
+                
+                <span class="idioma_juego">
+                    <p>Español</p>
+                </span>
+
+                <span class="manual_juego">
+                    <p><a href="manuales/Cyclades.pdf"></a></p>
+                </span>
+
+                <span class="tutorial">
+                    <p>Lorem</p>
+                </span>
+            </div>
+
+            <div class="juego">
+                <span class="img_juego">
+                    <p>King of Tokyo</p>
+                    <p><img src="img/juegos/king-of-tokyo.jpeg" alt=""></p>
+                </span>
+                
+                <span class="idioma_juego">
+                    <p>Español</p>
+                </span>
+
+                <span class="manual_juego">
+                    <p><a href="manuales/King-of-Tokyo.pdf"></a></p>
+                </span>
+
+                <span class="tutorial">
+                    <p>Lorem</p>
+                </span>
+            </div>
+
+            <div class="juego">
+                <span class="img_juego">
+                    <p>Pandemic Legacy: Temporada 0</p>
+                    <p><img src="img/juegos/pandemic-legacy-season0.jpeg" alt=""></p>
+                </span>
+                
+                <span class="idioma_juego">
+                    <p>Español</p>
+                </span>
+
+                <span class="manual_juego">
+                    <p>Lorem<a href=""></a></p>
+                </span>
+
+                <span class="tutorial">
+                    <p>Lorem</p>
+                </span>
+            </div>
+
+            <div class="juego">
+                <span class="img_juego">
+                    <p>Samurai Sword</p>
+                    <p><img src="img/juegos/samurai-sword.jpeg" alt=""></p>
+                </span>
+                
+                <span class="idioma_juego">
+                    <p>Español</p>
+                </span>
+
+                <span class="manual_juego">
+                    <p><a href="manuales/Samurai-Sword.pdf"></a></p>
+                    <p><a href="manuales/Samurai-Sword-Sol-Naciente.pdf"></a></p>
+                </span>
+
+                <span class="tutorial">
+                    <p>Lorem</p>
+                </span>
+            </div>
+
+            <div class="juego">
+                <span class="img_juego">
+                    <p>Scythe</p>
+                    <p><img src="img/juegos/scythe.jpeg" alt=""></p>
+                </span>
+                
+                <span class="idioma_juego">
+                    <p>Español</p>
+                </span>
+
+                <span class="manual_juego">
+                    <p><a href="manuales/Scythe.pdf"></a></p>
+                </span>
+
+                <span class="tutorial">
+                    <p>Lorem</p>
+                </span>
+            </div>
+
+            <div class="juego">
+                <span class="img_juego">
+                    <p>Spirit Island</p>
+                    <p><img src="img/juegos/spirit-island.jpeg" alt=""></p>
+                </span>
+                
+                <span class="idioma_juego">
+                    <p>Ingles</p>
+                </span>
+
+                <span class="manual_juego">
+                    <p><a href="manuales/Spirit-Island.pdf"></a></p>
+                </span>
+
+                <span class="tutorial">
+                    <p>Lorem</p>
+                </span>
+            </div>
+
+            <div class="juego">
+                <span class="img_juego">
+                    <p>Terraforming Mars</p>
+                    <p><img src="img/juegos/terraformin-mars.jpeg" alt=""></p>
+                </span>
+                
+                <span class="idioma_juego">
+                    <p>Español</p>
+                </span>
+
+                <span class="manual_juego">
+                    <p><a href="manuales/Terraforming-Mars.pdf"></a></p>
+                </span>
+
+                <span class="tutorial">
+                    <p>Lorem</p>
+                </span>
+            </div>            
+
+        </div>
+-->
+        <div id="ludoteca">
             <table>
                 <tr>
                     <th colspan="2">Juegos</th>
@@ -50,109 +344,109 @@
                     <th>Manuales y reglas</th>
                     <th>Tutoriales</th>
                 </tr>
-                <tr>
+                <tr class="juego">
                     <td><img src="img/juegos/7-wonders+expansiones.jpeg" alt=""></td>
                     <td>7 Wonders + Expansiones (Armada y Lideres) </td>
                     <td>Español</td>
                     <td>
-                        <a href="manuales/7-wonders.pdf">7 Wonders</a>
-                        <a href="manuales/7-wonders-Armada.pdf">7 Wonders: Armada</a>
-                        <a href="manuales/7-wonders-Leaders.pdf">7 Wonders: Líderes</a>
+                        <p><a href="manuales/7-wonders.pdf">7 Wonders</a></p>
+                        <p><a href="manuales/7-wonders-Armada.pdf">7 Wonders: Armada</a></p>
+                        <p><a href="manuales/7-wonders-Leaders.pdf">7 Wonders: Líderes</a></p>
                     </td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="juego">
                     <td><img src="img/juegos/arkham-horror.jpeg" alt=""></td>
                     <td>Arkham Horror</td>
                     <td>Español</td>
                     <td><a href=""></a></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="juego">
                     <td><img src="img/juegos/captain-sonar.jpeg" alt=""></td>
                     <td>Captain Sonar</td>
                     <td>Español</td>
                     <td><a href="manuales/Captain-SONAR.pdf"></a></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="juego">
                     <td><img src="img/juegos/carcassonne-plus.jpeg" alt=""></td>
                     <td>Carcassonne Plus</td>
                     <td>Español</td>
                     <td><a href=""></a></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="juego">
                     <td><img src="img/juegos/catan.jpeg" alt=""></td>
                     <td>Catan</td>
                     <td>Español</td>
                     <td>
-                        <a href="manuales/Catan-resumen.pdf">Catan: Resumen</a>
-                        <a href="manuales/Catan-resumen.pdf">Catan: Reglas</a>
+                        <p><a href="manuales/Catan-resumen.pdf">Catan: Resumen</a></p>
+                        <p><a href="manuales/Catan-resumen.pdf">Catan: Reglas</a></p>
                     </td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="juego">
                     <td><img src="img/juegos/catan-expansiones.jpeg" alt=""></td>
                     <td>Catan:Mercaderes y Bárbaros <br> Catan: Piratas y exploradores</td>
                     <td>Español</td>
                     <td></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="juego">
                     <td><img src="img/juegos/cosmic-encounter.jpeg" alt=""></td>
                     <td>Cosmic Encounter</td>
                     <td>Ingles</td>
                     <td><a href="manuales/Cosmic-Encounter.pdf"></a></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="juego">
                     <td><img src="img/juegos/cyclades.jpeg" alt=""></td>
                     <td>Cyclades</td>
                     <td>Español</td>
                     <td><a href="manuales/Cyclades.pdf"></a></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="juego">
                     <td><img src="img/juegos/king-of-tokyo.jpeg" alt=""></td>
                     <td>King of Tokyo</td>
                     <td>Español</td>
                     <td><a href="manuales/King-of-Tokyo.pdf"></a></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="juego">
                     <td><img src="img/juegos/pandemic-legacy-season0.jpeg" alt=""></td>
                     <td>Pandemic Legacy: Temporada 0</td>
                     <td>Español</td>
                     <td><a href=""></a></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="juego">
                     <td><img src="img/juegos/samurai-sword.jpeg" alt=""></td>
                     <td>Samurai Sword</td>
                     <td>Español</td>
                     <td>
-                        <a href="manuales/Samurai-Sword.pdf"></a>
-                        <a href="manuales/Samurai-Sword-Sol-Naciente.pdf"></a>
+                        <p><a href="manuales/Samurai-Sword.pdf"></a></p>
+                        <p><a href="manuales/Samurai-Sword-Sol-Naciente.pdf"></a></p>
                     </td>
 
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="juego">
                     <td><img src="img/juegos/scythe.jpeg" alt=""></td>
                     <td>Scythe</td>
                     <td>Español</td>
                     <td><a href="manuales/Scythe.pdf"></a></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="juego">
                     <td><img src="img/juegos/spirit-island.jpeg" alt=""></td>
                     <td>Spirit Island</td>
                     <td>Ingles</td>
                     <td><a href="manuales/Spirit-Island.pdf"></a></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="juego">
                     <td><img src="img/juegos/terraformin-mars.jpeg" alt=""></td>
                     <td>Terraforming Mars</td>
                     <td>Español</td>
@@ -161,13 +455,16 @@
                 </tr>
             </table>
         </div>
-        
+
     </section>
 
-    
+    <footer>
 
+        
 
-
+        <p>Página diseñada por <a href="mailto:estebanlizaso@gmail.com">Esteban Lizaso</a> y <a href="mailto:florenciaskoropad@gmail.com">Florencia Skoropad Callori</a>.</p>
+        <p>Derechos reservados</p>
+    </footer>
 
 </body>
 </html>
