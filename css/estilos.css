@@ -1,117 +1,63 @@
-:root{
-    font-size: 20px; /* Tamaño base */
-}
+:root{font-size: 20px; /* Tamaño base */}
 
-*{
-    margin: 0;
-    padding: 0;
-}
+*{margin: 0;padding: 0;}
 
-body{
-    background-image: url(../img/taberna.jpg);
-    margin: 2%;
-}
+body{background-image: url(../img/taberna.jpg);min-height: 100vh;display: grid;grid-template-columns: repeat(12,1fr);}
 
-header, footer, nav{
-    padding: 1%;
-    /*border-radius: 2rem;*/
-    font-size: 1.5rem;
-    background-color: darkblue;
-    color: white;
-    text-align: center;
-    font-family: 'Macondo', cursive;
-    overflow: auto;
-}
+header, footer, nav{padding: 1%;/*border-radius: 2rem;*/font-size: 1rem;background-color: darkblue;color: white;text-align: center;font-family: 'Macondo', cursive;}
 
-nav{
-    position: sticky;
-    top: 0;
-    /*right: 0;*/
-}
+header{position: sticky;grid-column: span 12;top: 0;/*right: 0;*/}
 
-a{
-    text-decoration: none;
-}
+#presentacion{grid-column: span 6;}
 
-nav a{
-    color:white;
-}
+#la_taberna{grid-column: span 6;}
 
-footer a{
-    color: white;
-}
+#nuestros_juegos{grid-column: span 12;}
 
-div{
-    padding: 1%;
-    background-color: white;
-    
-}
+#ludoteca{grid-column: span 12;}
 
+#horarios{grid-column: span 6;}
 
+#ubicacion{grid-column: span 6;}
 
-/*#ludoteca{
-    border: 4px coral solid;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(20,200px);
-    gap: 5px 5px;
-}*/
+p{text-align: justify;margin: 2%;}
 
-img{
-    max-width: 200px;
-    max-height: 200px;
-}
+iframe{width: 100%;}
 
-table{
-    margin: 0%;
-    padding: 1%;
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-}
+h1{font-size: 4rem;}
 
-td{
-    padding: 1%;
-    border: 1px black solid;
-}
+nav{display: flex;justify-content:space-around;}
 
-th{
-    padding: 1%;
-    border: 1px black solid;
-}
+.boton_nav{text-decoration: none;color:white;}
 
-/*.encabezado{
-    grid-column: span 12;
-}*/
+footer{grid-column: span 12;}
 
-/*.juego{
-    border: 4px blue solid;
-    grid-column: span 12;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(20,200px);
-    gap: 5px 5px;
-}*/
+footer a{color: white;}
 
-/*.img_juego{
-    border: 2px red solid;
-    background-color: coral;
-    grid-column: span 4;
-}
+div{margin: 1%;padding: 1%;background-color: white;}
 
-.idioma_juego{
-    border: 2px red solid;
-    grid-column: span 1;
-}
+#img_taberna{padding: 2%;width: 96%;}
 
-.manual_juego{
-    border: 2px red solid;
-    grid-column: span 4;
-}
+.img_juego{max-width: 300px;max-height: 300px;}
 
-.tutorial{
-    border: 2px red solid;
-    grid-column: span 3;
-}*/
+h2{font-size: 2.5rem;text-align: center;}
 
+table{margin: 0%;padding: 1%;width: 100%;border-collapse: collapse;text-align: center;}
 
+td{padding: 1%;border: 3px black solid;}
+
+th{padding: 1%;border: 3px black solid;color: white;background-color: darkblue;}
+
+tbody tr:nth-child(odd) {background-color: #e6e6e6;}
+  
+tbody tr:nth-child(even) {background-color: #bdbdbd;}
+
+.evento{margin: 1%;grid-column: span 8;}
+
+.img_evento{grid-column: span 4;}
+
+#img_carcassonne{margin: 2%;width: 96%;}
+
+#img_rol{margin: 2%;width: 96%;}
+
+#img_catan{margin: 2%;width: 96%;}
