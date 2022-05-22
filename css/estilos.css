@@ -34,7 +34,7 @@ footer{grid-column: span 12;}
 
 footer a{color: white;}
 
-div{margin: 1%;padding: 1%;background-color: white;}
+.contenedor{margin: 1%;padding: 1%;background-color: white;}
 
 #img_taberna{padding: 2%;width: 96%;}
 
