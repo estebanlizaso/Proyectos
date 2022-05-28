@@ -75,3 +75,5 @@ tbody tr:nth-child(even) {background-color: #bdbdbd;}
 #img_rol{margin: 2%;width: 96%;}
 
 #img_catan{margin: 2%;width: 96%;}
+
+.formulario{grid-column: 2/12;}
