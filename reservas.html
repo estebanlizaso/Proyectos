@@ -33,30 +33,34 @@
     </header>
 
     <div class="contenedor formulario">
-        <form action="/action.php" method="post" name="reserva">
+        <form action="" name="reserva" id="reserva">
 
             <p>
                 <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre" required>
+                <input type="text" name="nombre" id="nombre">
             </p>
 
             <p>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email">
             </p>
 
             <p>
                 <label for="telefono">Teléfono:</label>
-                <input type="tel" name="telefono" id="telefono" placeholder="Ej: 1112346789" pattern="[0-9]{10}" required>
+                <input type="tel" name="telefono" id="telefono" placeholder="Ej: 1112346789"><!--  pattern="[0-9]{10}" required> -->
             </p>
 
             <p>
                 <label for="personas">Cantidad de personas</label>
-                <input type="number" name="personas" id="personas" min="1" required>
+                <input type="number" name="personas" id="personas" min="1">
             </p>
 
             <p>
-                <input type="date" name="fecha" min="2022-05-30" required>
+                <label for="fecha">Fecha de la reserva:</label>
+                <input type="date" name="fecha" id="fecha" min="2022-05-30">
+
+                <label for="hora">Hora de la reserva:</label>
+                <input type="time" name="hora" id="hora">
             </p>
 
             <p>
