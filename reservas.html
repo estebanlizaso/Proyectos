@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Font: Macondo-->
     <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet"> <!--Font: Macondo-->
 
+    <script src="https://kit.fontawesome.com/8181a01962.js" crossorigin="anonymous"></script> <!--Redes sociales-->
+
     <script src="js/formulario.js"></script> <!--Verificación del formulario-->
 
 </head>
@@ -27,64 +29,78 @@
             <a class="boton_nav" href="ludoteca.html">Nuestra Ludoteca</a>
             <a class="boton_nav" href="reservas.html">Reservas</a>
             <a class="boton_nav" href="eventos.html">Eventos</a>
-            <a class="boton_nav" href="tienda.html">Tienda</a>
-            <a class="boton_nav" href="contacto.html">Contacto</a>
         </nav>
     </header>
 
+    <section id="la_taberna_2">
+        <img id="img_taberna_2" src="img/fotos/foto1.jpg" alt="La Taberna de Marduk">
+    </section>
+
     <div class="contenedor formulario">
+        <p><h2><strong>Reservas</strong></h2></p>
+
         <form action="" name="reserva" id="reserva">
 
-            <p>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
-            </p>
+            <fieldset>
+                <legend>Datos de contacto</legend>
 
-            <p>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-            </p>
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </p>
+        
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </p>
+        
+                    <p>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Ej: 1112346789"><!--  pattern="[0-9]{10}" required> -->
+                    </p>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Datos de la reserva</legend>
 
-            <p>
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" name="telefono" id="telefono" placeholder="Ej: 1112346789"><!--  pattern="[0-9]{10}" required> -->
-            </p>
+                <p>
+                    <label for="personas">Cantidad de personas</label>
+                    <input type="number" name="personas" id="personas" min="1">
+                </p>
+    
+                <p>
+                    <label for="fecha">Fecha de la reserva:</label>
+                    <input type="date" name="fecha" id="fecha" min="2022-05-30">
+    
+                    <label for="hora">Hora de la reserva:</label>
+                    <input type="time" name="hora" id="hora">
+                </p>
+    
+                <p>
+                    <label for="reserva_juegos">Juego que quieras reservar:</label>
+                    <select name="reserva_juegos" id="juegos reservados">
+                        <option value="ninguno"></option>
+                        <option value="7wonders">7 Wonders y expansiones</option>
+                        <option value="Arkham Horror">Arkham Horror</option>
+                        <option value="Captain S.O.N.A.R.">Captain S.O.N.A.R.</option>
+                        <option value="Carcassonne">Carcassonne</option>
+                        <option value="Catan">Catan y expansiones</option>
+                        <option value="Cosmic Encounter">Cosmic Encounter</option>
+                        <option value="Cyclades">Cyclades</option>
+                        <option value="King of Tokyo">King of Tokyo</option>
+                        <option value="Pandemic Legacy: Temporada 0">Pandemic Legacy: Temporada 0</option>
+                        <option value="Samurai Sword">Samurai Sword</option>
+                        <option value="Scythe">Scythe</option>
+                        <option value="Spirit Island">Spirit Island</option>
+                        <option value="Terraforming Mars">Terraforming Mars</option>
+                    </select>
+                </p>
+    
+                <p><label for="observaciones">Comentarios y observaciones:</label></p>
+                <p><textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea></p>
+            </fieldset>
 
-            <p>
-                <label for="personas">Cantidad de personas</label>
-                <input type="number" name="personas" id="personas" min="1">
-            </p>
-
-            <p>
-                <label for="fecha">Fecha de la reserva:</label>
-                <input type="date" name="fecha" id="fecha" min="2022-05-30">
-
-                <label for="hora">Hora de la reserva:</label>
-                <input type="time" name="hora" id="hora">
-            </p>
-
-            <p>
-                <label for="reserva_juegos">Juego que quieras reservar:</label>
-                <select name="reserva_juegos" id="juegos reservados">
-                    <option value="ninguno"></option>
-                    <option value="7wonders">7 Wonders y expansiones</option>
-                    <option value="Arkham Horror">Arkham Horror</option>
-                    <option value="Captain S.O.N.A.R.">Captain S.O.N.A.R.</option>
-                    <option value="Carcassonne">Carcassonne</option>
-                    <option value="Catan">Catan y expansiones</option>
-                    <option value="Cosmic Encounter">Cosmic Encounter</option>
-                    <option value="Cyclades">Cyclades</option>
-                    <option value="King of Tokyo">King of Tokyo</option>
-                    <option value="Pandemic Legacy: Temporada 0">Pandemic Legacy: Temporada 0</option>
-                    <option value="Samurai Sword">Samurai Sword</option>
-                    <option value="Scythe">Scythe</option>
-                    <option value="Spirit Island">Spirit Island</option>
-                    <option value="Terraforming Mars">Terraforming Mars</option>
-                </select>
-            </p>
-
-            <p><label for="observaciones">Comentarios y observaciones:</label></p>
-            <p><textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea></p>
+            
 
 
 
@@ -98,5 +114,25 @@
 
         </form>
     </div>
+
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com/la.taberna.de.marduk/" class="fa-brands fa-facebook fa-2xl"></a>
+            <a href="https://wa.me/5491136008145" class="fa-brands fa-whatsapp fa-2xl"></a>
+            <a href="https://www.instagram.com/latabernademarduk/" class="fa-brands fa-instagram fa-2xl"></a>
+            <a href="https://t.me/arielanonimo" class="fa-brands fa-telegram fa-2xl"></a>
+            <a href="https://discord.gg/Mzf2W4uf" class="fa-brands fa-discord fa-2xl"></a>
+        </div>
+
+        <div>
+            <p>La Taberna de Marduk</p>
+            <p>Holmberg 2882, CABA, Argentina</p>
+        </div>
+
+        <div>
+            <p><h6>Diseñado y desarrollado por <a href="mailto:estebanlizaso@gmail.com"><b>Esteban Lizaso</b></a> y <a href="mailto:florenciaskoropad@gmail.com"><b>Florencia Skoropad Callori</b></a>.</p></h6>
+            <p><h6>Derechos reservados</p></h6>
+        </div>
+    </footer>
 </body>
 </html>
