@@ -50,11 +50,19 @@ function validarReserva(evento){
     }
 
     var hora = document.getElementById("hora").value;
-    //if 
-
-
-
-
+    if (hora.length == 0) {
+        alert('Debe seleccionar un horario para la reserva.')
+        document.reserva.hora.focus();
+        return;
+    } else if (3 < dia < 6 && 200 <= hora[0]+hora[1]+hora[3]+hora[4] < 1000) {
+        alert('En ese horario La Taberna de Marduk se encuentra cerrada. Por favor revise nuestro horario y vuelva a seleccionar un horario para la reserva.')
+        document.reserva.hora.focus();
+        return;
+    } else if (0 <= dia <= 3 && (0 <= hora[0]+hora[1]+hora[3]+hora[4] < 900 || 2200 <= hora[0]+hora[1]+hora[3]+hora[4])) {
+        alert('En ese horario La Taberna de Marduk se encuentra cerrada. Por favor revise nuestro horario y vuelva a seleccionar un horario para la reserva.')
+        document.reserva.hora.focus();
+        return;
+    }
 
     alert("Muchas gracias por su reserva.")
     this.submit();
