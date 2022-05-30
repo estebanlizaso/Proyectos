@@ -128,7 +128,7 @@ legend{margin: 2%;font-size:  1rem;}
     h2{font-size: 4vw;}
 
     /*Tabla*/
-    .img_juego{width: 15vw; max-width: 100%;height: auto;/display:flex;justify-content: space-around; align-items: center;/}
+    .img_juego{width: 15vw; max-width: 100%;height: auto;/*display:flex;justify-content: space-around; align-items: center;*/}
     table{width: 100%;text-align: center;font-size: 1.5vw;}
     td{border: 3px black solid;}
     th{padding: 1%;border: 3px black solid;}
