@@ -144,32 +144,18 @@ legend{margin: 2%;font-size:  1rem;}
     fieldset{margin: 3%;}
     .formulario p {margin: 2%;}
     legend{font-size: 3vw;}
+    #juegos_para_reservar{display:flex;}
 }
 
 @media all and (min-width:1024px) {
     .boton_nav{padding:0.5%;}
-        
-
-    p{margin: 1.5vw;}
-    h1{font-size: 5vw;}
-    h2{font-size: 3vw;}
-
-    .redes a{padding: 2%;}
-    footer p{margin: 0;}
-    footer div{padding: 0.7vw;}
-    .contenedor{padding: 1vw;border-radius: 1rem;}
+    .contenedor{border-radius: 1.5rem;}
 
     /*Tabla*/
     .img_juego{width: 15vw; max-width: 100%;height: auto;/*display:flex;justify-content: space-around; align-items: center;*/}
     table{width: 100%;text-align: center;font-size: 1.5vw;}
     td{border: 3px black solid;}
     th{padding: 1%;border: 3px black solid;}
-
-    /*Formulario*/
-    fieldset{margin: 3%;}
-    .formulario p {margin: 0.5%;}
-    legend{margin: 1%;font-size: 2vw;}
-    #enviar{font-size: 1rem;}
 }
 
 @media all and (min-width:1200px) {
