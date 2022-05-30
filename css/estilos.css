@@ -56,13 +56,31 @@ footer div{padding: 2vw;}
 
 
 /*Tabla*/
-.img_juego{width: 15vw; max-width: 100%;height: auto;/*display:flex;justify-content: space-around; align-items: center;*/}
+.img_juego{width: 15vw; max-width: 100%;height: auto;}
 .tutoriales{width: 20vw; max-width: 100%;height: 11.25vw;}
-table{width: 100%;border-collapse: collapse;text-align: center;font-size: 1.5vw;}
-td{border: 3px black solid;}
+table{width: 100%;border-collapse: collapse;text-align: center;font-size: 1.5vw;table-layout: fixed;}
+td{border: 2px black solid;}
 th{padding: 1%;border: 3px black solid;color: white;background-color: darkblue;}
 tbody tr:nth-child(odd) {background-color: #e6e6e6;}
 tbody tr:nth-child(even) {background-color: #bdbdbd;}
+tbody tr:hover{background-color: #888888;}
+
+/*Tabla para dispositivos móviles*/
+@media all and (max-width:800px) {
+.img_juego{display: none;}
+.tutoriales{width: 50vw; max-width: 100%;height: 28.125vw;}
+table{width: 100%;border-collapse: collapse;text-align: center;font-size: 0.8rem;table-layout: fixed;}
+td{border: 2px black solid;border-top: none;}
+tbody tr:nth-child(odd) {background-color: #e6e6e6;}
+tbody tr:nth-child(even) {background-color: #bdbdbd;}
+tbody tr:hover{background-color: #888888;}
+thead {display: none;}
+tr {display: block;margin: 0.5rem;}
+td {display: block;text-align: right;} 
+td::before {content: attr(data-label);font-weight: bold;float: left;}
+}
+
+
 
 /*Eventos*/
 .evento{grid-column: 2/12;display: flex;z-index: -1;}
