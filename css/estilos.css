@@ -11,27 +11,20 @@ header{position: sticky;grid-column: span 12;top: 0;z-index: 1;}
 nav{display: flex; flex-direction: column;}
 
 .boton_nav{text-decoration: none;color:white;width: 100%; padding:0.5vw; justify-content: center;}
-
 .boton_nav:hover{background-color: rgb(71, 71, 199);}
 
 #la_taberna{grid-column: 2/12;grid-row: 2;display:flex;align-items: center;}
-
 #presentacion{grid-column: 2/12;grid-row: 3; display: flex;}
-
 #img_taberna{width: 100%;}
-
 #la_taberna_2{grid-column: 2/12;display:flex;align-items: center;}
-
 #img_taberna_2{width: 100%;}
 
 .formulario{grid-column: 2/12;}
 
 #nuestros_juegos{grid-column: 2/12;}
-
 #ludoteca{grid-column: 2/12;}
 
 #horarios{grid-column: 2/12;}
-
 #ubicacion{grid-column: 2/12;}
 
 footer{grid-column: span 12;}
@@ -159,20 +152,12 @@ legend{margin: 2%;font-size:  1rem;}
 }
 
 @media all and (min-width:1200px) {
-    header, footer, nav{font-size: 1.3rem;}
-    .boton_nav{padding:0%;font-size: 2vw;}
-
     #horarios{grid-column: 2/7;}
     #ubicacion{grid-column: 7/12;}
-
-    p{margin: 1.5vw;}
+    p{margin: 1.5vw;font-size: 1.2rem;}
     h1{font-size: 5vw;}
     h2{font-size: 3vw;}
-
-    .redes a{padding: 2%;}
-    footer p{margin: 0;}
-    footer div{padding: 0.7vw;}
-    .contenedor{padding: 1vw;border-radius: 1rem;}
+    footer div{padding: 1vw;}
 
     /*Tabla*/
     .img_juego{width: 15vw; max-width: 100%;height: auto;/*display:flex;justify-content: space-around; align-items: center;*/}
@@ -181,8 +166,7 @@ legend{margin: 2%;font-size:  1rem;}
     th{padding: 1%;border: 3px black solid;}
 
     /*Formulario*/
-    fieldset{margin: 3%;}
-    .formulario p {margin: 0.5%;}
-    legend{margin: 1%;font-size: 2vw;}
+    .formulario p {margin: 1%;}
     #enviar{font-size: 1rem;}
+    #juegos_para_reservar{display:initial;}
 }
