@@ -1,7 +1,4 @@
-# TPO-codo-a-codo
-TPO del programa Codo a codo
+# Página Web - Cafetería y juegos de mesa
+La Taberna de Marduk
 
-Trabajo realizado por Esteban Lizaso y Florencia Skoropad Callori
-
-Aclaraciones sobre el trabajo:
-- La animación se encuentra en la página eventos.html
+Página realizada por Esteban Lizaso y Florencia Skoropad Callor
